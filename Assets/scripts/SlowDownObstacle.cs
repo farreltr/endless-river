@@ -15,6 +15,6 @@ public class SlowDownObstacle : MonoBehaviour
 	void OnTriggerEnter2D (Collider2D other)
 	{
 		controller.SlowDownBoat (speedDecrease);
-		this.collider2D.enabled = false;
+		this.GetComponent<Collider2D>().enabled = false;
 	}
 }

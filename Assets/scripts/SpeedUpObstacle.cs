@@ -15,7 +15,7 @@ public class SpeedUpObstacle : MonoBehaviour
 	void OnTriggerEnter2D (Collider2D other)
 	{
 		controller.SpeedUpBoat (speedIncrease);
-		this.collider2D.enabled = false;
+		this.GetComponent<Collider2D>().enabled = false;
 	}
 
 }

@@ -11,6 +11,7 @@ public class IFObstacle : MonoBehaviour
 	public int difficultyRatingMax;
 	public int crewLosses;
 	private bool isUpdated = false;
+	private bool preupdated = false;
 
 	void Start ()
 	{
@@ -22,6 +23,10 @@ public class IFObstacle : MonoBehaviour
 	{
 		if (!isUpdated && script.GetBooleanVariable ("doupdate")) {
 			UpdateVariables ();
+		}
+
+		if (!preupdated && script.GetBooleanVariable ("preupdate")) {
+			PreUpdate ();
 		}
 	}
 
@@ -65,5 +70,12 @@ public class IFObstacle : MonoBehaviour
 
 	}
 
-
+	private void PreUpdate(){
+		if (script.GetBooleanVariable ("fight")) {
+			bool win = CalculateWinValue ();
+			script.SetBooleanVariable ("win", win);
+			script.SetIntegerVariable ("crewloss", crewLosses);
+		}
+		preupdated = true;
+	}
 }
