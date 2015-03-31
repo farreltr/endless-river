@@ -63,6 +63,10 @@ public class IFObstacle : MonoBehaviour
 				}
 			}
 			isUpdated = true;
+			int crewGain = script.GetIntegerVariable ("crewgain");
+			if (crewGain != null && crewGain != 0) {
+				controller.AddPeopleToBoat (crewGain);
+			}
 			script.SetBooleanVariable ("doupdate", false);
 			controller.StartBoat ();
 			GetComponent<BoxCollider2D> ().enabled = false;
@@ -70,7 +74,8 @@ public class IFObstacle : MonoBehaviour
 
 	}
 
-	private void PreUpdate(){
+	private void PreUpdate ()
+	{
 		if (script.GetBooleanVariable ("fight")) {
 			bool win = CalculateWinValue ();
 			script.SetBooleanVariable ("win", win);
