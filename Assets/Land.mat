@@ -1,0 +1,385 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Land
+  m_Shader: {fileID: 4800000, guid: 1008805bc1fc2ed4c97694cbc8481dba, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailNormalMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ParallaxMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _OcclusionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _EmissionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailMask
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailAlbedoMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MetallicGlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Bump
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Ramp
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _LookupTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _OverlayTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Scale
+        second: 176.119995
+      data:
+        first:
+          name: _Cutoff
+        second: .354000002
+      data:
+        first:
+          name: _SrcBlend
+        second: 1
+      data:
+        first:
+          name: _DstBlend
+        second: 0
+      data:
+        first:
+          name: _Parallax
+        second: .0199999996
+      data:
+        first:
+          name: _ZWrite
+        second: 1
+      data:
+        first:
+          name: _Glossiness
+        second: 0
+      data:
+        first:
+          name: _BumpScale
+        second: 1
+      data:
+        first:
+          name: _OcclusionStrength
+        second: 1
+      data:
+        first:
+          name: _DetailNormalMapScale
+        second: 1
+      data:
+        first:
+          name: _UVSec
+        second: 0
+      data:
+        first:
+          name: _EmissionScaleUI
+        second: 0
+      data:
+        first:
+          name: _Mode
+        second: 0
+      data:
+        first:
+          name: _Metallic
+        second: 0
+      data:
+        first:
+          name: _Range
+        second: 0
+      data:
+        first:
+          name: _Range2
+        second: 0
+      data:
+        first:
+          name: _HueRange
+        second: .970000029
+      data:
+        first:
+          name: _ColorMerge
+        second: 8
+      data:
+        first:
+          name: _Outline
+        second: .0799999982
+      data:
+        first:
+          name: _StitchSize
+        second: 0
+      data:
+        first:
+          name: _Brightness
+        second: 1
+      data:
+        first:
+          name: _Ratio
+        second: 1
+      data:
+        first:
+          name: _Amount
+        second: 0
+      data:
+        first:
+          name: _Density
+        second: -91.5
+      data:
+        first:
+          name: _Sharpness
+        second: 0
+      data:
+        first:
+          name: _Darkness
+        second: 0
+      data:
+        first:
+          name: _PX
+        second: 1
+      data:
+        first:
+          name: _PY
+        second: 1
+      data:
+        first:
+          name: _RGBShiftAmount
+        second: .620000005
+      data:
+        first:
+          name: _RGBShiftAngleCos
+        second: -6.0999999
+      data:
+        first:
+          name: _RGBShiftAngleSin
+        second: 0
+      data:
+        first:
+          name: _Strength
+        second: .600000024
+      data:
+        first:
+          name: _Clamp
+        second: .0500000007
+      data:
+        first:
+          name: _Levels
+        second: 4
+      data:
+        first:
+          name: _Threshold
+        second: .5
+      data:
+        first:
+          name: _Timer
+        second: -37.6599998
+    m_Colors:
+      data:
+        first:
+          name: _EmissionColor
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _EmissionColorUI
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _PatCol
+        second: {r: .152941182, g: .450980425, b: .0627451017, a: 1}
+      data:
+        first:
+          name: _NewColor
+        second: {r: .905882418, g: .905882418, b: .905882418, a: 1}
+      data:
+        first:
+          name: _PatCol2
+        second: {r: .952941239, g: .94901967, b: .717647076, a: 1}
+      data:
+        first:
+          name: _NewColor2
+        second: {r: .00956397597, g: .00481744856, b: .327586204, a: .458823532}
+      data:
+        first:
+          name: _OutlineColor
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _KernelT
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _KernelM
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _KernelB
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _Master
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _Reds
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _Yellows
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _Greens
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _Cyans
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _Blues
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _Magentas
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _Data
+        second: {r: .300000012, g: .589999974, b: .109999999, a: 1}
+      data:
+        first:
+          name: _RGB
+        second: {r: 1, g: .5, b: .200000003, a: 1}
+      data:
+        first:
+          name: _InputMin
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _InputMax
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _InputGamma
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _OutputMin
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _OutputMax
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Center
+        second: {r: .5, g: .5, b: 0, a: 0}
+      data:
+        first:
+          name: _BCG
+        second: {r: 0, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Coeffs
+        second: {r: .5, g: .5, b: .5, a: 1}
+      data:
+        first:
+          name: _Red
+        second: {r: 1, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _Green
+        second: {r: 0, g: 1, b: 0, a: 1}
+      data:
+        first:
+          name: _Blue
+        second: {r: 0, g: 0, b: 1, a: 1}
+      data:
+        first:
+          name: _Constant
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _Displace
+        second: {r: .699999988, g: 0, b: 0, a: 0}
