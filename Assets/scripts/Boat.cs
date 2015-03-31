@@ -16,12 +16,8 @@ public class Boat : MonoBehaviour
 	private Vector3 turnPoint;
 	private bool stopped = false;
 	private bool gameOver = false;
-     private Vector3     mousePosition;
-     private Vector3 screenPos;
 
-     Camera cam;
-     Transform my;
-     Rigidbody2D body;
+
   float lockPos = 0;
 
 
@@ -32,12 +28,7 @@ public class Boat : MonoBehaviour
 	}
 
 
-        void Awake()
-        {
-            cam = Camera.main;
-            my = GetComponent<Transform>();
-            body = GetComponent<Rigidbody2D>();
-        }
+     
 	void FixedUpdate ()
 	{
 		if (moveBack) {
@@ -54,7 +45,7 @@ public class Boat : MonoBehaviour
         Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
         Vector3 dir = Input.mousePosition - pos;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); 
+        transform.rotation = Quaternion.AngleAxis(Mathf.Clamp(angle,-45f, 45f), Vector3.forward); 
  
 
 	}
