@@ -4,7 +4,7 @@ using System.Collections;
 public class BackgroundScroller : MonoBehaviour
 {
 	
-	private float tileSize = 2.61f;
+	private float tileSize = 1.4f;
 	private Vector3 currPos;
 	private int numberOfTiles;
 	private Vector3 boatPos;
